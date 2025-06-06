@@ -1,0 +1,56 @@
+:root{
+  --color-primary:#0d47a1;   /* Azul oscuro */
+  --color-accent:#ff9800;    /* Naranja  */
+  --color-success:#4caf50;   /* Verde     */
+  --color-light:#f5f7fa;     /* Gris muy claro */
+}
+body{
+  font-family:'Open Sans', sans-serif;
+  background-color:var(--color-light);
+  color:#333;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:'Montserrat', sans-serif;
+  font-weight:700;
+}
+
+/* utilidades */
+.btn-accent{
+  background-color:var(--color-accent);
+  border-color:var(--color-accent);
+  color:#fff;
+}
+.btn-accent:hover{filter:brightness(1.1);} 
+
+.btn-locked{
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.table-bordered td, .table-bordered th{
+  border:1px solid #000!important;
+}
+.table thead th{vertical-align:middle}
+
+/* ---- Sidebar look & feel -------------------------------------- */
+.sidebar-dark .list-group-item{
+  background:#0f3c8c;              /* azul base */
+  color:#fff;
+  border:none;
+  cursor:pointer;                  /* evita el cursor de bloqueo */
+}
+
+/* efecto hover / focus */
+.sidebar-dark .list-group-item:hover,
+.sidebar-dark .list-group-item:focus{
+  background:#134fae !important;   /* azul un poco más claro */
+  color:#fff !important;
+}
+
+/* ítem seleccionado (activo) */
+.sidebar-dark .list-group-item.active{
+  background:var(--color-accent) !important;  /* naranja corporativo */
+  color:#fff;
+}
+
